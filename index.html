@@ -1,0 +1,577 @@
+Try AI directly in your favourite apps … Use Gemini to generate drafts and
+refine content, plus get Gemini Pro with access to Google's next-gen AI for
+₹1,950 ₹489 for 3 months 1 100%
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SelfStand🚀 | Web Designing Company</title>
+    <style>
+      /* RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: linear-gradient(120deg, #0a0a1a, #12132a, #20244a);
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      /* HEADER */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 18px 70px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(15px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        animation: slideDown 1.2s ease;
+      }
+
+      header h1 {
+        font-size: 1.9rem;
+        background: linear-gradient(90deg, #49d0ff, #b2f7ef, #49d0ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      nav a {
+        color: #d4d6e1;
+        text-decoration: none;
+        margin-left: 35px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s;
+      }
+
+      nav a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: #49d0ff;
+        left: 0;
+        bottom: -4px;
+        transition: 0.3s;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      /* HERO */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+        flex-wrap: wrap;
+        background: radial-gradient(
+          circle at top left,
+          #1a1b37 0%,
+          #0d0f24 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(73, 208, 255, 0.2),
+          transparent 60%
+        );
+        top: -100px;
+        right: -100px;
+        filter: blur(80px);
+        z-index: 0;
+      }
+
+      .hero-content {
+        max-width: 540px;
+        animation: fadeInUp 1.8s ease;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-content h1 {
+        font-size: 3.3rem;
+        line-height: 1.3;
+        background: linear-gradient(90deg, #b2f7ef, #49d0ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+      }
+
+      .hero-content p {
+        color: #c7c9d1;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 28px;
+      }
+
+      .hero-content button {
+        background: linear-gradient(90deg, #49d0ff, #b2f7ef);
+        border: none;
+        color: #0a0b1a;
+        padding: 14px 35px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(73, 208, 255, 0.4);
+      }
+
+      .hero-content button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(178, 247, 239, 0.7);
+      }
+
+      .hero-img {
+        flex: 1;
+        text-align: center;
+        animation: floaty 3s ease-in-out infinite;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-img img {
+        width: 100%;
+        max-width: 520px;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 15px rgba(73, 208, 255, 0.6)) brightness(0.95)
+          contrast(1.05);
+        transition:
+          transform 0.6s ease,
+          filter 0.6s ease;
+      }
+
+      .hero-img img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 25px rgba(178, 247, 239, 0.9)) brightness(1.05);
+      }
+
+      /* ABOUT */
+      .about {
+        padding: 110px 10% 90px;
+        background: #111324;
+        text-align: center;
+      }
+
+      .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #49d0ff;
+      }
+
+      .about p {
+        max-width: 850px;
+        margin: auto;
+        line-height: 1.8;
+        color: #d1d3dc;
+        font-size: 1.1rem;
+      }
+
+      /* SERVICES */
+      .services {
+        padding: 100px 10%;
+        background: #191b31;
+        text-align: center;
+      }
+
+      .services h2 {
+        font-size: 2.4rem;
+        color: #49d0ff;
+        margin-bottom: 50px;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 35px;
+      }
+
+      .service {
+        background: rgba(255, 255, 255, 0.06);
+        padding: 40px;
+        border-radius: 16px;
+        transition: all 0.35s ease;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(6px);
+        box-shadow: 0 0 10px rgba(73, 208, 255, 0.1);
+      }
+
+      .service:hover {
+        transform: translateY(-8px) scale(1.03);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 25px rgba(73, 208, 255, 0.2);
+      }
+
+      .service img {
+        width: 60px;
+        margin-bottom: 18px;
+        filter: drop-shadow(0 0 6px #49d0ff);
+      }
+
+      .service h3 {
+        color: #b2f7ef;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+      }
+
+      .service p {
+        color: #d4d6e1;
+        font-size: 0.96rem;
+        line-height: 1.6;
+      }
+
+      /* CAREERS */
+      .careers {
+        padding: 100px 10%;
+        background: #0f1024;
+        text-align: center;
+      }
+
+      .careers h2 {
+        color: #49d0ff;
+        font-size: 2.4rem;
+        margin-bottom: 25px;
+      }
+
+      .job {
+        background: rgba(255, 255, 255, 0.06);
+        margin: 25px auto;
+        padding: 35px;
+        border-radius: 16px;
+        max-width: 820px;
+        text-align: left;
+        border-left: 4px solid #49d0ff;
+        transition: 0.3s ease;
+        backdrop-filter: blur(6px);
+      }
+
+      .job:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 25px rgba(73, 208, 255, 0.15);
+      }
+
+      .job h3 {
+        color: #b2f7ef;
+        margin-bottom: 8px;
+      }
+
+      .job h4 {
+        color: #49d0ff;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .job li {
+        line-height: 1.6;
+        color: #d1d3dc;
+      }
+
+      .apply-btn {
+        background: linear-gradient(90deg, #49d0ff, #b2f7ef);
+        color: #0a0b1a;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s ease;
+        margin-top: 10px;
+      }
+
+      .apply-btn:hover {
+        transform: scale(1.05);
+      }
+
+      /* CONTACT */
+      .contact {
+        padding: 100px 10%;
+        background: #0c0d1b;
+        text-align: center;
+      }
+
+      .contact h2 {
+        color: #49d0ff;
+        margin-bottom: 25px;
+      }
+
+      .contact form {
+        max-width: 520px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .contact input,
+      .contact textarea {
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 1rem;
+        color: #1a1a1a;
+      }
+
+      .contact button {
+        background: linear-gradient(90deg, #49d0ff, #b2f7ef);
+        color: #0a0b1a;
+        border: none;
+        padding: 12px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .contact button:hover {
+        transform: scale(1.05);
+      }
+
+      /* FOOTER */
+      footer {
+        background: #000814;
+        text-align: center;
+        padding: 25px 0;
+        color: #b2f7ef;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+        box-shadow: 0 -5px 10px rgba(73, 208, 255, 0.1);
+      }
+
+      /* ANIMATIONS */
+      @keyframes floaty {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-80px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 15px 30px;
+        }
+        nav a {
+          margin-left: 15px;
+        }
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding-top: 120px;
+        }
+        .hero-img img {
+          max-width: 340px;
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>SelfStand</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>We Design. We Build. We Empower.</h1>
+        <p>
+          At SelfStand, we craft stunning, functional, and innovative digital
+          experiences. From modern websites to engaging user interfaces — we
+          transform visions into vibrant online realities.
+        </p>
+        <button>Explore Services</button>
+      </div>
+      <div class="hero-img">
+        <img
+          src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg"
+          alt="Futuristic web development interface"
+        />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About SelfStand</h2>
+      <p>
+        Founded by <b>Tech Company</b> , SelfStand is a next-gen web design
+        studio based in India, specializing in modern front-end development and
+        creative design. We believe in digital experiences that inspire,
+        connect, and deliver results. Every project is a story — and we make it
+        unforgettable.
+      </p>
+    </section>
+
+    <!-- UPDATED SERVICES -->
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service">
+          <img src="https://cdn-icons-png.flaticon.com/512/2721/2721261.png" />
+          <h3>Web Design</h3>
+          <p>
+            Custom, user-centered designs that match your brand identity and
+            values. Every layout is carefully crafted to balance aesthetics and
+            usability.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" />
+          <h3>Development</h3>
+          <p>
+            Fast, responsive, and scalable websites built using the latest web
+            technologies. Our developers turn creative designs into
+            high-performing digital platforms.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+          <h3>UI/UX Design</h3>
+          <p>
+            Beautiful, intuitive interfaces that improve engagement and user
+            satisfaction. We combine research, design thinking, and
+            feedback-driven improvements.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://cdn-icons-png.flaticon.com/512/1424/1424453.png" />
+          <h3>Team Hiring</h3>
+          <p>
+            We hire and mentor creative individuals with a passion for modern
+            web design and innovation. Our culture focuses on learning,
+            teamwork, and growth.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png" />
+          <h3>SEO Optimization</h3>
+          <p>
+            Boost your visibility online with our smart, data-driven SEO
+            strategies that deliver real results.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://cdn-icons-png.flaticon.com/512/3208/3208676.png" />
+          <h3>Maintenance & Support</h3>
+          <p>
+            Keep your website fast, secure, and updated. Our team provides
+            regular support and performance tracking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="careers" id="careers">
+      <h2>Join Our Team</h2>
+      <div class="job">
+        <h3>Front-End Developer</h3>
+        <h4>📍 Location: Pune / Remote</h4>
+        <ul>
+          <li>
+            Develop clean, responsive websites using HTML, CSS, and JavaScript.
+          </li>
+          <li>Collaborate with UI/UX designers and backend developers.</li>
+          <li>Ensure cross-platform performance and SEO best practices.</li>
+        </ul>
+        <h4>Requirements:</h4>
+        <ul>
+          <li>Proficiency in HTML, CSS, and JS; React knowledge preferred.</li>
+        </ul>
+        <h4>Eligibility:</h4>
+        <ul>
+          <li>BE/BTech or equivalent IT degree. Freshers welcome.</li>
+        </ul>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+
+      <div class="job">
+        <h3>UI/UX Designer</h3>
+        <h4>📍 Location: Hybrid</h4>
+        <ul>
+          <li>Design user flows and wireframes for modern web applications.</li>
+          <li>Use tools like Figma or Adobe XD to build elegant interfaces.</li>
+        </ul>
+        <h4>Requirements:</h4>
+        <ul>
+          <li>Creative mindset and a strong design portfolio.</li>
+          <li>Understanding of responsive and accessible design.</li>
+        </ul>
+        <h4>Eligibility:</h4>
+        <ul>
+          <li>Graduates in design or related fields. Internships available.</li>
+        </ul>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Let’s Connect</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 SelfStand. Crafted with 💙 by our creative team.</p>
+    </footer>
+  </body>
+</html>
